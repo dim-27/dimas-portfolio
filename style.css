@@ -1,75 +1,74 @@
-html,body {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    background-color: #8AAAE5;
-    color: #FFFFFF;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
 }
 
-h2 {
-    content: '';
-    display: block;
-    border-bottom: 2px solid white;
+:root {
+  --ff-primary : "Montserrat", sans-serif;
+  --ff-secondary: "Roboto", sans-serif;
+
+  --fw-regular: 300;
+  --fw-bold: 900;
+
+  --clr-light: #F8FAFC;
+  --clr-dark: #181818;
+  --clr-accent: #659FC6;
+
+  --fs-h1: 3.5rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.5rem;
+  --fs-body: 1.25rem;
 }
 
-a:link {
-    text-decoration: none;
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
-a:visited {
-    text-decoration: none;
-    color: white;
+html,
+body {
+  height: 100%;
 }
 
-#wrap-page {
-    height: 90vh;
-    /* margin: 0 auto; */
-    margin: 10vh 15vw;
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-size: 25px;
-    opacity: 1;
-    animation-name: fade;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
+/* html {
+  color-scheme: dark;
+} */
+
+img,svg {
+  display: block;
+  max-width: 100%;
 }
 
-#lang-list ul {
-    display: grid;
-    padding: 0.5em;
-    grid-template-columns: 1fr 1fr;
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
 }
 
-#link-page {
-    word-spacing: 0.2em;
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  line-height: 1.5;
 }
 
-#link-page img {
-    background-size: contain;
-    width: 30px;
+.nav-link {
+  text-decoration: none;
+  color: inherit;
 }
 
-.my-name {
-    display: grid;
-    font-size: 30px;
+.nav-link:hover {
+  text-decoration: underline;
 }
 
-.portfolio {
-    display: grid;
-    font-size: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 5rem;
-}
-
-@keyframes typing {
-    from {width: 0%;}
-    to {width: 100%;}
-}
-
-
-
-@keyframes fade {
-    0% { opacity: 0 }
-    100% { opacity: 1 }
+@media (min-height: 800px) {
+  :root {
+  
+  }
 }
 
