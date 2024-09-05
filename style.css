@@ -35,9 +35,10 @@ body {
   height: 100%;
 }
 
-/* html {
-  color-scheme: dark;
-} */
+h1 {font-size: var(--fs-h1);}
+h2 {font-size: var(--fs-h2);}
+h3 {font-size: var(--fs-h3);}
+
 
 img,svg {
   display: block;
@@ -49,12 +50,45 @@ ol[role="list"] {
   list-style: none;
 }
 
+li {
+  list-style: none;
+  font-size: var(--fs-h3);
+}
+
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   background-color: var(--clr-light);
   color: var(--clr-dark);
   line-height: 1.5;
+}
+
+header {
+  margin: 0 auto;
+  width: 90%;
+  padding: 1rem;
+}
+
+main {
+  width: 100%;
+  max-width: 50rem;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list  {
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-link {
@@ -68,7 +102,30 @@ body {
 
 @media (min-height: 800px) {
   :root {
-  
+    body {
+      --fs-h1: 3rem;
+      --fs-h2: 1.75rem;
+      --fs-h3: 1.25rem;
+      --fs-h4: 1rem;
+    }
   }
 }
+
+@media (min-width: 375px) {
+  main {
+    padding: 0 2.5rem;
+  }
+}
+
+@media (max-width: 440px) {
+  main {
+    padding: 0 2.5rem;
+  }
+  
+  .nav-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
 
