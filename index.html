@@ -6,53 +6,185 @@
   <link rel="shortcut icon" href="#" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./assets/style.css">
 
   <title>Dimas Firmanda - Developer</title>
   <body>
     <div id="wrapper">
-
       <main>
         <header>
           <nav class="nav">
             <ul class="nav-list">
+              <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
               <li class="nav-item"><a href="#" class="nav-link">skills</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">services</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">portfolio</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">contact</a></li>
+              <li class="nav-item"><a href="#works" class="nav-link">portfolio</a></li>
+              <li class="nav-item"><a href="#connect" class="nav-link">contact</a></li>
             </ul>
           </nav>
         </header>
+
         <section class="intro" id="hero">
-          <h1 class="section-title section-intro">
-            Hey, I'm <strong>Dimas</strong>
-          </h1>
-          <p class="section-subtitle section-subtitle-intro">
-            I’m a freelance and full-stack developer with a passion of designing and building creative digital experiences that I deeply cared about.
+          <div class="title-profile">
+            <h1 class="intro title-intro">
+              Hey, I'm <strong>Dimas</strong>
+            </h1>
+            <img class="pictures title-photo" src="./assets/images/foto_dimas.jpg" alt="my self photo">
+          </div>
+          <p class="subtitle subtitle-intro">
+            I’m a freelance and developer with a passion of designing and building creative digital experiences that I deeply care about.
           </p>
         </section>
   
         <section class="intro" id="about">
-          <h2 class="section-title section-about">About me</h2>
-          <p class="section-subtitle section-subtitle-description">
-            Based in Jakarta, I’m currently working as a freelance full-stack engineer. I have a strong interest in using code to solve challenges when creating and developing websites. Aside from work, I like to play video games and love to play basketball and football in my spare time.
+          <h3 class="title about">About me</h3>
+          <p class="subtitle subtitle-about">
+            Based in Jakarta, I have a strong interest in using code to solve challenges when creating and developing websites. Aside from work, I like to play video games and love to play basketball and football in my spare time.
           </p>
+          <div class="btn">
+            <button class="btn-resume">
+              My Resume
+              <i class="fa-solid fa-link"></i>
+          </div>
+          </button>
         </section>
-  
-        <section class="services" id="offer">
-          <h2 class="services-title">What I Offer</h2>
-          <p>
-            My purpose as a full-stack developer is to deliver high quality digital products and provide significant advantages for your businesses.
-          </p>
+        <section class="my-works" id="works">
+          <h3 class="title my-works">My works</h3>
+          <div class="work portfolios">
+            <div class="portfolio-project">
+              <img src="./assets/images/portfolio1.jpg" alt="" class="portfolio-item">
+              <p class="portfolio-description">
+                A really fun rock-paper-scissors game
+              </p>
+              <div class="btn-portfolio">
+                <button class="btn-code">
+                  Code
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </button>
+                <button class="btn-preview">
+                  Preview
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-project">
+              <img src="./assets/images/portfolio1.jpg" alt="" class="portfolio-item">
+              <p class="portfolio-description">
+                A really fun rock-paper-scissors game
+              </p>
+              <div class="btn-portfolio">
+                <button class="btn-code">
+                  Code
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </button>
+                <button class="btn-preview">
+                  Preview
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-project">
+              <img src="./assets/images/portfolio1.jpg" alt="" class="portfolio-item">
+              <p class="portfolio-description">
+                A really fun rock-paper-scissors game
+              </p>
+              <div class="btn-portfolio">
+                <button class="btn-code">
+                  Code
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </button>
+                <button class="btn-preview">
+                  Preview
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-project">
+              <img src="./assets/images/portfolio1.jpg" alt="" class="portfolio-item">
+              <p class="portfolio-description">
+                A really fun rock-paper-scissors game
+              </p>
+              <div class="btn-portfolio">
+                <button class="btn-code">
+                  Code
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </button>
+                <button class="btn-preview">
+                  Preview
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
-  
-        <section class="" id="worrks">
-          h2.
+        <!-- <section class="my-works" id="work">
+          <h3 class="title my-works">My works</h3>
+          <div class="work portfolios">
+            <button class="arrow-left">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <div class="portfolio-project">
+              <img src="./assets/images/portfolio1.jpg" alt="" class="portfolio-item">
+              <p class="portfolio-description">
+                A really fun rock-paper-scissors game
+              </p>
+              <div class="btn-portfolio">
+                <button class="btn-code">
+                  Code
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </button>
+                <button class="btn-preview">
+                  Preview
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-project">
+              <img src="./assets/images/portfolio1.jpg" alt="" class="portfolio-item">
+              <p class="portfolio-description">
+                A really fun rock-paper-scissors game
+              </p>
+              <div class="btn-portfolio">
+                <button class="btn-code">
+                  Code
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </button>
+                <button class="btn-preview">
+                  Preview
+                  <i class="fa-solid fa-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <button class="arrow-right">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </section> -->
+        <section class="get-connect" id="connect">
+          <h3 class="title title-links">
+            Find me
+          </h3>
+          <div class="subtitle subtitle-links">
+            <ul class="connect-link">
+              <li class="link-item">
+                <a href="https://github.com/dim-27" class="link" target="_blank">
+                  <i class="fa-brands fa-github fa-lg"></i>
+                  <h3>@dim-27</h3>
+                </a>
+              </li>
+              <li class="link-item">
+                <a href="https://www.linkedin.com/in/muhammad-dimas-firmanda/" class="link" target="_blank">
+                  <i class="fa-brands fa-linkedin fa-lg"></i>
+                  <h3>@dimasfirmanda</h3>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
+        <footer>
+          <div id="footer">dim-27 ©2024</div>
+        </footer>
       </main>
-      <footer>
-        <!-- <div id="footer">Dimas Firmanda © 2024</div> -->
-      </footer>
     </div>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
