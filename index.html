@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="#" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assets/style.css">
-
-  <title>Dimas Firmanda - Developer</title>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Dimas Firmanda - Developer</title>
+  </head>
   <body>
     <div id="wrapper">
       <main>
@@ -16,7 +17,6 @@
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">skills</a></li>
               <li class="nav-item"><a href="#works" class="nav-link">portfolio</a></li>
               <li class="nav-item"><a href="#connect" class="nav-link">contact</a></li>
             </ul>
@@ -50,65 +50,37 @@
         <section class="my-works" id="works">
           <h3 class="title my-works">My works</h3>
           <div class="work portfolios">
-            <div class="portfolio-project">
-              <img src="./assets/images/portfolio1.jpg" alt="" class="portfolio-item">
+            <div class="portfolio-project portfolio1">
+              <img src="./assets/images/portfolio1.jpg" alt="rock-paper-scissors" class="portfolio-item">
               <p class="portfolio-description">
                 A really fun rock-paper-scissors game
               </p>
               <div class="btn-portfolio">
-                <button class="btn-code">
-                  Code
-                  <i class="fa-solid fa-up-right-from-square"></i>
-                </button>
-                <button class="btn-preview">
+                <button class="btn-preview live-rps">
                   Preview
                   <i class="fa-solid fa-up-right-from-square"></i>
                 </button>
               </div>
             </div>
-            <div class="portfolio-project">
-              <img src="./assets/images/portfolio1.jpg" alt="" class="portfolio-item">
+            <div class="portfolio-project portfolio2">
+              <img src="./assets/images/portfolio2.jpg" alt="calculator" class="portfolio-item">
               <p class="portfolio-description">
-                A really fun rock-paper-scissors game
+                A cool way to calculate your daily needs
               </p>
               <div class="btn-portfolio">
-                <button class="btn-code">
-                  Code
-                  <i class="fa-solid fa-up-right-from-square"></i>
-                </button>
-                <button class="btn-preview">
+                <button class="btn-preview live-calculate">
                   Preview
                   <i class="fa-solid fa-up-right-from-square"></i>
                 </button>
               </div>
             </div>
-            <div class="portfolio-project">
-              <img src="./assets/images/portfolio1.jpg" alt="" class="portfolio-item">
+            <div class="portfolio-project portfolio3">
+              <img src="./assets/images/portfolio3.jpg" alt="etch-a-sketch" class="portfolio-item">
               <p class="portfolio-description">
-                A really fun rock-paper-scissors game
+                Etch-a-Sketch drawing board whenever you bored
               </p>
               <div class="btn-portfolio">
-                <button class="btn-code">
-                  Code
-                  <i class="fa-solid fa-up-right-from-square"></i>
-                </button>
-                <button class="btn-preview">
-                  Preview
-                  <i class="fa-solid fa-up-right-from-square"></i>
-                </button>
-              </div>
-            </div>
-            <div class="portfolio-project">
-              <img src="./assets/images/portfolio1.jpg" alt="" class="portfolio-item">
-              <p class="portfolio-description">
-                A really fun rock-paper-scissors game
-              </p>
-              <div class="btn-portfolio">
-                <button class="btn-code">
-                  Code
-                  <i class="fa-solid fa-up-right-from-square"></i>
-                </button>
-                <button class="btn-preview">
+                <button class="btn-preview live-etch">
                   Preview
                   <i class="fa-solid fa-up-right-from-square"></i>
                 </button>
@@ -116,49 +88,6 @@
             </div>
           </div>
         </section>
-        <!-- <section class="my-works" id="work">
-          <h3 class="title my-works">My works</h3>
-          <div class="work portfolios">
-            <button class="arrow-left">
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <div class="portfolio-project">
-              <img src="./assets/images/portfolio1.jpg" alt="" class="portfolio-item">
-              <p class="portfolio-description">
-                A really fun rock-paper-scissors game
-              </p>
-              <div class="btn-portfolio">
-                <button class="btn-code">
-                  Code
-                  <i class="fa-solid fa-up-right-from-square"></i>
-                </button>
-                <button class="btn-preview">
-                  Preview
-                  <i class="fa-solid fa-up-right-from-square"></i>
-                </button>
-              </div>
-            </div>
-            <div class="portfolio-project">
-              <img src="./assets/images/portfolio1.jpg" alt="" class="portfolio-item">
-              <p class="portfolio-description">
-                A really fun rock-paper-scissors game
-              </p>
-              <div class="btn-portfolio">
-                <button class="btn-code">
-                  Code
-                  <i class="fa-solid fa-up-right-from-square"></i>
-                </button>
-                <button class="btn-preview">
-                  Preview
-                  <i class="fa-solid fa-up-right-from-square"></i>
-                </button>
-              </div>
-            </div>
-            <button class="arrow-right">
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-        </section> -->
         <section class="get-connect" id="connect">
           <h3 class="title title-links">
             Find me

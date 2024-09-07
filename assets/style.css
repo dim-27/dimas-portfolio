@@ -78,8 +78,9 @@ header {
   margin: 0 auto;
   top: 0;
   left: 0;
-  width: 90%;
-  padding: 1rem;
+  width: 90%s;
+  padding: 1.5
+  rem;
   background-color: var(--clr-light);
 }
 
@@ -90,18 +91,6 @@ main {
 
 section {
   padding: 2.5rem;
-}
-
-section .title-intro {
-  padding-bottom: 1rem ;
-  font-weight: var(--fw-bold);
-}
-
-section .title {
-  padding-bottom: 1rem ;
-  text-decoration: underline rgb(55, 63, 71) 5px;
-  text-underline-offset: 0.8rem;
-  font-weight: var(--fw-bold);
 }
 
 p {
@@ -121,7 +110,9 @@ footer {
 }
 
 #hero {
-  text-align: center;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr 1fr;
 }
 
 #about {
@@ -133,6 +124,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1.5rem;
 }
 
 .nav-list  {
@@ -143,6 +135,33 @@ footer {
 .nav-link {
   text-decoration: none;
   color: inherit;
+}
+
+.title-intro {
+  font-weight: var(--fw-bold);
+}
+
+.title-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.title {
+  padding-bottom: 1rem ;
+  text-decoration: underline rgb(55, 63, 71) 5px;
+  text-underline-offset: 0.8rem;
+  font-weight: var(--fw-bold);
+}
+
+
+.subtitle-intro {
+  display: flex;
+  justify-content: center;
+  max-width: 30rem;
+  text-align: center;
+
 }
 
 .btn {
@@ -201,13 +220,6 @@ footer {
   color: var(--clr-accent-dark);
 }
 
-.title-profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
-}
-
 .nav-link:hover {
   text-decoration: underline;
 }
@@ -220,7 +232,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr ;
   place-items: center;
-  gap: 4rem;
+  gap: 1rem;
   padding-top: 3rem;
 }
 
@@ -228,17 +240,17 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 0.5rem;
   padding: 1.25rem;
-  border-radius: 1rem;
   transition: all 0.25s ease-in;
 }
 
 .portfolio-item {
+  float: left;
+  width:  20rem;
+  height: 10rem;
   object-fit: cover;
-  border-radius: 0.5rem;
-  border: 1px solid black;
-
+  border-radius: 1.5rem;
 }
 
 .portfolio-description {
@@ -247,18 +259,18 @@ footer {
  
 .btn-portfolio {
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: var(--fs-h4);
   gap: 1.5rem;
 }
 
 .btn-portfolio button {
-  width: 100%;
-  max-width: 15rem;
+  max-width: 12rem;
   padding: 0.5rem 2.5rem;
   margin-top: 1rem;
   background-color: var(--clr-light);
   border: 2px solid black;
-  box-shadow: 6px 6px 2px 1px var(--clr-dark);
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
