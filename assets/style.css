@@ -108,9 +108,11 @@ footer {
 }
 
 #hero {
-  display: grid;
-  place-items: center;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 #about {
