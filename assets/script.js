@@ -2,6 +2,7 @@ const getButton = document.querySelector('.btn-resume');
 const liveEtch = document.querySelector('.live-etch');
 const liveRPS = document.querySelector('.live-rps');
 const liveCalculate = document.querySelector('.live-calculate');
+const liveMemory = document.querySelector(".live-memory");
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu')
 const navLink = document.querySelectorAll('.nav-link');
@@ -21,6 +22,10 @@ liveRPS.addEventListener('click', () => {
 liveCalculate.addEventListener('click', () => {
   window.open('https://dim-27.github.io/calculator/', '_blank');
 });
+
+liveMemory.addEventListener('click', () => {
+  window.open('https://dim-27.github.io/memory-game/', '_blank');
+})
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle("active");
