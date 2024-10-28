@@ -13,10 +13,6 @@ getButton.addEventListener('click', (url) => {
   window.open('https://drive.google.com/file/d/10hB-m-pIUM4hyq3Jq4X6F78MhkI5S85M/view?usp=sharing', '_blank');
 });
 
-// liveEtch.addEventListener('click', (url) => {
-//   window.open('https://dim-27.github.io/etch-a-sketch/', '_blank');
-// });
-
 liveRPS.addEventListener('click', () => {
   window.open('https://dim-27.github.io/rock-paper-scissors/', '_blank');
 });
