@@ -10,7 +10,7 @@ const navMenu = document.querySelector('.nav-menu')
 const navLink = document.querySelectorAll('.nav-link');
 
 getButton.addEventListener('click', (url) => {
-  window.open('https://drive.google.com/file/d/10hB-m-pIUM4hyq3Jq4X6F78MhkI5S85M/view?usp=sharing', '_blank');
+  window.open('https://drive.google.com/file/d/1yz-O3XTuB5hOSkX-4fOhPlXYcgjpPjfb/view?usp=sharing', '_blank');
 });
 
 liveRPS.addEventListener('click', () => {
